@@ -1,0 +1,299 @@
+/* =====================================
+    1. HERO.
+===================================== */
+.hero {
+    background-image: url("../images/landing/commons/hero-feature.jpg");
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 50px;
+}
+
+.hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, var(--primary-heading), var(--primary-heading));
+    opacity: 0.7;
+}
+
+.hero-nav {
+    position: relative;
+    z-index: 1;
+}
+
+.site-logo {
+    width: 220px;
+}
+
+.hero-btn {
+    text-align: right;
+}
+
+.hero-center {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero-center h1 {
+    color: #FFF;
+    font-size: 40px;
+    line-height: 52px;
+    margin-top: -1px;
+}
+
+.hero-center h1 span {
+    color: var(--secundary-color);
+}
+
+.hero-center p {
+    font-size: 16px;
+    color: #FFF;
+    margin-bottom: 10px;
+}
+
+
+/* =====================================
+    2. CONTENT.
+===================================== */
+
+.section-title {
+    width: 100%;
+    margin: auto auto 30px auto;
+}
+
+.section-title h2 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.section-title h5 {
+    font-size: 14px;
+}
+
+.theme-prev {
+    -webkit-box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+    -moz-box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+    box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+    position: relative;
+}
+
+.feature-box {
+    background-color: #FFF;
+    -webkit-box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+    -moz-box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+    box-shadow: 0 0 11px 0 rgba(6, 22, 58, .14);
+    padding: 25px 20px;
+    margin: 15px 0px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(14, 55, 123, 0.8);
+  }
+
+  .link-icon {
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .theme-prev:hover .overlay {
+    opacity: 1;
+    cursor: pointer;
+  }
+  
+
+.feature-box .mr-3 {
+    width: 50px;
+}
+
+.feature-box h5 {
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+
+.feature-box p {
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 0px;
+}
+
+.basic-carousel {
+    position: relative;
+}
+
+.basic-carousel .owl-theme .custom-nav {
+    display: none;
+}
+
+
+.basic-carousel .owl-dots {
+    display: none;
+}
+
+.inner-section {
+    margin: 20px;
+}
+
+footer {
+    background-image: url("../images/landing/commons/footer-bg.jpg");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+footer:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, var(--primary-heading), var(--primary-heading));
+    opacity: 0.8;
+}
+
+.footer-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.footer-content h2{
+    color: #FFF;
+    font-weight: 600;
+    margin: 15px 0px 30px;
+}
+
+.footer-content h2 span{
+    color: var(--secundary-color);
+}
+
+.footer-logo{
+    width: 240px;
+    margin: auto;
+}
+
+
+/* =====================================
+    1. HERO.
+===================================== */
+
+@media (max-width:992px) {
+    h1 {
+      font-size: 40px;
+      line-height: 45px;
+    }
+  
+    h2 {
+      font-size: 30px;
+      line-height: 35px;
+    }
+  
+    h3 {
+      font-size: 25px;
+      line-height: 30px;
+    }
+  
+    h4 {
+      font-size: 20px;
+      line-height: 25px;
+    }
+  
+    h5 {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  
+    h6 {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  
+  }
+  
+@media (max-width:991px) {
+
+    .site-logo {
+        width: 200px;
+        margin: auto;
+    }
+
+
+    .hero-btn{
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .section-title h2 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .hero-center h1 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .hero-center {
+        top: 60%;
+    }
+
+    .footer-logo{
+        width: 200px;
+    }
+    
+}
+
+
+@media (max-width:767px) {
+    .theme-prev{
+        margin: 20px 0px;
+    }
+
+    footer {
+        height: 100%;
+        padding: 100px 0px;
+    }
+    
+
+    .footer-content {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: translate(0%, 0%);
+        text-align: center;
+    }
+
+    .footer-content h2{
+        font-size: 25px;
+    }
+    
+}
